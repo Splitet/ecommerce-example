@@ -1,0 +1,5 @@
+package com.example.orderservice.entity;
+
+public enum OrderState {
+    INITIAL, RESERVING_STOCK, PAYMENT_READY, PAID, RELEASING_STOCK, PROCESSING_FAILED, CANCELLED, SHIPPED, RETURNED
+}

@@ -1,0 +1,14 @@
+spring:
+  profiles: default,development,test,docker
+  application:
+    name: discovery-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    enabled-by-default: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+      environment: ${spring.profiles}

@@ -1,0 +1,20 @@
+spring:
+  profiles: default,development,test
+  application:
+    name: gateway-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    enabled-by-default: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+      environment: ${spring.profiles}
+    export:
+      prometheus:
+        descriptions: true
+        enabled: ${prometheus.enabled:true} # Whether exporting of metrics to Prometheus is enabled.
+        step: 1m # Step size (i.e. reporting frequency) to use.
+---

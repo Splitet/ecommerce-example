@@ -1,0 +1,15 @@
+spring:
+  profiles: default,development
+  application:
+    name: order-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    enabled-by-default: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+      environment: ${spring.profiles}
+---

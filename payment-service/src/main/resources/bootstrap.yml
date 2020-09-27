@@ -1,0 +1,15 @@
+spring:
+  profiles: default,development
+  application:
+    name: payment-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    enabled-by-default: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+      environment: ${spring.profiles}
+---
