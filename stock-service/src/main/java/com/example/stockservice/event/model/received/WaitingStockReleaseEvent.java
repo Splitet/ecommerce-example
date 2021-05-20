@@ -1,6 +1,6 @@
 package com.example.stockservice.event.model.received;
 
-import com.kloia.eventapis.common.ReceivedEvent;
+import io.splitet.core.common.ReceivedEvent;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,6 @@
 package com.example.paymentservice.event.model.received;
 
-import com.kloia.eventapis.common.ReceivedEvent;
+import io.splitet.core.common.ReceivedEvent;
 import com.example.paymentservice.entity.PaymentInformation;
 import lombok.AllArgsConstructor;
 import lombok.Data;

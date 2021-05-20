@@ -7,7 +7,7 @@ import com.example.stockservice.resource.model.AddStockDto;
 import com.example.stockservice.resource.model.CreateStockDto;
 import com.example.stockservice.util.exception.StockException;
 import com.example.stockservice.util.mapper.StockMapper;
-import com.kloia.eventapis.common.EventKey;
+import io.splitet.core.common.EventKey;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,10 +1,10 @@
 package com.example.stockservice.event.handler;
 
-import com.kloia.eventapis.api.EventHandler;
-import com.kloia.eventapis.api.EventRepository;
-import com.kloia.eventapis.api.ViewQuery;
-import com.kloia.eventapis.cassandra.ConcurrencyResolver;
-import com.kloia.eventapis.common.EventKey;
+import io.splitet.core.api.EventHandler;
+import io.splitet.core.api.EventRepository;
+import io.splitet.core.api.ViewQuery;
+import io.splitet.core.cassandra.ConcurrencyResolver;
+import io.splitet.core.common.EventKey;
 import com.example.stockservice.util.exception.StockNotEnoughException;
 import com.example.stockservice.event.model.published.StockReleasedEvent;
 import com.example.stockservice.event.model.published.StockReservedEvent;

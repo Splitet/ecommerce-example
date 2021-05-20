@@ -1,6 +1,6 @@
 package com.example.orderservice.entity;
 
-import com.kloia.eventapis.spring.model.JpaEntity;
+import io.splitet.core.spring.model.JpaEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

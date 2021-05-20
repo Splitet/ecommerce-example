@@ -1,7 +1,7 @@
 package com.example.orderservice.event.model.published;
 
-import com.kloia.eventapis.common.EventType;
-import com.kloia.eventapis.common.PublishedEvent;
+import io.splitet.core.common.EventType;
+import io.splitet.core.common.PublishedEvent;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

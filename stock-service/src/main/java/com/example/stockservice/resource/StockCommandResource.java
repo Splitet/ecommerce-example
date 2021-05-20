@@ -3,7 +3,7 @@ package com.example.stockservice.resource;
 import com.example.stockservice.resource.model.AddStockDto;
 import com.example.stockservice.resource.model.CreateStockDto;
 import com.example.stockservice.util.exception.StockException;
-import com.kloia.eventapis.common.EventKey;
+import io.splitet.core.common.EventKey;
 import io.swagger.annotations.Api;
 
 import org.springframework.web.bind.annotation.PathVariable;

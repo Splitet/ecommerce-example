@@ -1,11 +1,11 @@
 package com.example.orderservice.event.handler;
 
-import com.kloia.eventapis.api.EventHandler;
-import com.kloia.eventapis.api.EventRepository;
-import com.kloia.eventapis.api.ViewQuery;
-import com.kloia.eventapis.cassandra.ConcurrentEventException;
-import com.kloia.eventapis.common.EventKey;
-import com.kloia.eventapis.exception.EventStoreException;
+import io.splitet.core.api.EventHandler;
+import io.splitet.core.api.EventRepository;
+import io.splitet.core.api.ViewQuery;
+import io.splitet.core.cassandra.ConcurrentEventException;
+import io.splitet.core.common.EventKey;
+import io.splitet.core.exception.EventStoreException;
 import com.example.orderservice.event.model.published.OrderPaidEvent;
 import com.example.orderservice.event.model.received.PaymentSuccessEvent;
 import com.example.orderservice.entity.OrderState;

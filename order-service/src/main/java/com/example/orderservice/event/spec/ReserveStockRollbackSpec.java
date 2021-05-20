@@ -1,7 +1,7 @@
 package com.example.orderservice.event.spec;
 
 import com.example.orderservice.event.model.published.ReserveStockEvent;
-import com.kloia.eventapis.api.RollbackSpec;
+import io.splitet.core.api.RollbackSpec;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Component;

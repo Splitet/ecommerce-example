@@ -1,6 +1,6 @@
 package com.example.orderservice.client;
 
-import com.kloia.eventapis.api.CommandDto;
+import io.splitet.core.api.CommandDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

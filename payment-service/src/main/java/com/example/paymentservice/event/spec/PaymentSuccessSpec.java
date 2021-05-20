@@ -3,7 +3,7 @@ package com.example.paymentservice.event.spec;
 import com.example.paymentservice.event.model.published.PaymentSuccessEvent;
 import com.example.paymentservice.entity.Payment;
 import com.example.paymentservice.entity.PaymentState;
-import com.kloia.eventapis.view.EntityFunctionSpec;
+import io.splitet.core.view.EntityFunctionSpec;
 
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
 package com.example.stockservice.repository;
 
 import com.example.stockservice.entity.Stock;
-import com.kloia.eventapis.view.SnapshotRepository;
+import io.splitet.core.view.SnapshotRepository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;

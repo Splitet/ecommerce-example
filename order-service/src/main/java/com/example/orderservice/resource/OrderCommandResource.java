@@ -5,8 +5,8 @@ import javax.validation.Valid;
 import com.example.orderservice.util.exception.OrderException;
 import com.example.orderservice.resource.model.CreateOrderDto;
 import com.example.orderservice.resource.model.ProcessOrderDto;
-import com.kloia.eventapis.common.EventKey;
-import com.kloia.eventapis.view.Entity;
+import io.splitet.core.common.EventKey;
+import io.splitet.core.view.Entity;
 import io.swagger.annotations.Api;
 
 import org.springframework.web.bind.annotation.DeleteMapping;

@@ -2,7 +2,7 @@ package com.example.paymentservice.repository;
 
 
 import com.example.paymentservice.entity.Payment;
-import com.kloia.eventapis.view.SnapshotRepository;
+import io.splitet.core.view.SnapshotRepository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;

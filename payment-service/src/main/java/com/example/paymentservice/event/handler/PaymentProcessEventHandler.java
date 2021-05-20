@@ -4,11 +4,11 @@ import com.example.paymentservice.event.model.published.PaymentFailedEvent;
 import com.example.paymentservice.event.model.published.PaymentSuccessEvent;
 import com.example.paymentservice.event.model.received.PaymentProcessEvent;
 import com.example.paymentservice.util.exception.PaymentException;
-import com.kloia.eventapis.api.EventHandler;
-import com.kloia.eventapis.api.EventRepository;
-import com.kloia.eventapis.cassandra.ConcurrentEventException;
-import com.kloia.eventapis.common.EventKey;
-import com.kloia.eventapis.exception.EventStoreException;
+import io.splitet.core.api.EventHandler;
+import io.splitet.core.api.EventRepository;
+import io.splitet.core.cassandra.ConcurrentEventException;
+import io.splitet.core.common.EventKey;
+import io.splitet.core.exception.EventStoreException;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.beans.BeanUtils;

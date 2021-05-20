@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.example.paymentservice.entity.Payment;
 import com.example.paymentservice.util.exception.PaymentException;
-import com.kloia.eventapis.cassandra.EntityEvent;
+import io.splitet.core.cassandra.EntityEvent;
 import com.querydsl.core.types.Predicate;
 import io.swagger.annotations.Api;
 

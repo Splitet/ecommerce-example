@@ -3,12 +3,12 @@ package com.example.orderservice.command.handler;
 import com.example.orderservice.command.model.CreateOrderCommand;
 import com.example.orderservice.util.exception.OrderException;
 import com.example.orderservice.util.mapper.OrderMapper;
-import com.kloia.eventapis.api.Command;
-import com.kloia.eventapis.api.CommandHandler;
-import com.kloia.eventapis.api.EventRepository;
-import com.kloia.eventapis.cassandra.ConcurrentEventException;
-import com.kloia.eventapis.common.EventKey;
-import com.kloia.eventapis.exception.EventStoreException;
+import io.splitet.core.api.Command;
+import io.splitet.core.api.CommandHandler;
+import io.splitet.core.api.EventRepository;
+import io.splitet.core.cassandra.ConcurrentEventException;
+import io.splitet.core.common.EventKey;
+import io.splitet.core.exception.EventStoreException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

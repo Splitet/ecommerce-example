@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.example.stockservice.entity.Stock;
 import com.example.stockservice.util.exception.StockException;
-import com.kloia.eventapis.cassandra.EntityEvent;
+import io.splitet.core.cassandra.EntityEvent;
 import com.querydsl.core.types.Predicate;
 import io.swagger.annotations.Api;
 

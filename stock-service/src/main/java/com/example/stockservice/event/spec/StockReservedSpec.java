@@ -2,7 +2,7 @@ package com.example.stockservice.event.spec;
 
 import com.example.stockservice.event.model.published.StockReservedEvent;
 import com.example.stockservice.entity.Stock;
-import com.kloia.eventapis.view.EntityFunctionSpec;
+import io.splitet.core.view.EntityFunctionSpec;
 
 import org.springframework.stereotype.Component;
 

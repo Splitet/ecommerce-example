@@ -2,7 +2,7 @@ package com.example.orderservice.command.spec;
 
 
 import com.example.orderservice.command.handler.CancelOrderCommandHandler;
-import com.kloia.eventapis.api.RollbackCommandSpec;
+import io.splitet.core.api.RollbackCommandSpec;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Component;

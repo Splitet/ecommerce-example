@@ -4,7 +4,7 @@ import javax.validation.Valid;
 
 import com.example.paymentservice.resource.model.ReturnPaymentDto;
 import com.example.paymentservice.util.exception.PaymentException;
-import com.kloia.eventapis.common.EventKey;
+import io.splitet.core.common.EventKey;
 import io.swagger.annotations.Api;
 
 import org.springframework.web.bind.annotation.PathVariable;

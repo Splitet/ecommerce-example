@@ -11,10 +11,10 @@ import com.example.orderservice.util.mapper.OrderMapper;
 import com.example.orderservice.resource.OrderCommandResource;
 import com.example.orderservice.resource.model.CreateOrderDto;
 import com.example.orderservice.resource.model.ProcessOrderDto;
-import com.kloia.eventapis.common.EventKey;
-import com.kloia.eventapis.exception.EventStoreException;
-import com.kloia.eventapis.spring.configuration.DataMigrationService;
-import com.kloia.eventapis.view.Entity;
+import io.splitet.core.common.EventKey;
+import io.splitet.core.exception.EventStoreException;
+import io.splitet.core.spring.configuration.DataMigrationService;
+import io.splitet.core.view.Entity;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

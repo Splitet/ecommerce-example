@@ -2,9 +2,9 @@ package com.example.stockservice.resource.api;
 
 import com.example.stockservice.resource.StockQueryResource;
 import com.example.stockservice.util.exception.StockException;
-import com.kloia.eventapis.api.ViewQuery;
-import com.kloia.eventapis.cassandra.EntityEvent;
-import com.kloia.eventapis.exception.EventStoreException;
+import io.splitet.core.api.ViewQuery;
+import io.splitet.core.cassandra.EntityEvent;
+import io.splitet.core.exception.EventStoreException;
 import com.example.stockservice.entity.Stock;
 import com.example.stockservice.repository.StockRepository;
 import com.querydsl.core.types.Predicate;

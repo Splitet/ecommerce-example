@@ -5,7 +5,7 @@ import com.example.paymentservice.resource.PaymentCommandResource;
 import com.example.paymentservice.resource.model.ReturnPaymentDto;
 import com.example.paymentservice.util.exception.PaymentException;
 import com.example.paymentservice.util.mapper.PaymentMapper;
-import com.kloia.eventapis.common.EventKey;
+import io.splitet.core.common.EventKey;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

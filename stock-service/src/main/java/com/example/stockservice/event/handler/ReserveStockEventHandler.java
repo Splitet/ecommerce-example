@@ -1,11 +1,12 @@
 package com.example.stockservice.event.handler;
 
-import com.kloia.eventapis.api.EventHandler;
-import com.kloia.eventapis.api.EventRepository;
-import com.kloia.eventapis.api.ViewQuery;
-import com.kloia.eventapis.cassandra.ConcurrentEventResolver;
-import com.kloia.eventapis.common.EventKey;
-import com.kloia.eventapis.exception.EventStoreException;
+import io.splitet.core.api.EventHandler;
+import io.splitet.core.api.EventRepository;
+import io.splitet.core.api.ViewQuery;
+import io.splitet.core.cassandra.ConcurrentEventException;
+import io.splitet.core.cassandra.ConcurrentEventResolver;
+import io.splitet.core.common.EventKey;
+import io.splitet.core.exception.EventStoreException;
 import com.example.stockservice.util.exception.StockNotEnoughException;
 import com.example.stockservice.event.model.received.ReserveStockEvent;
 import com.example.stockservice.event.model.published.StockNotEnoughEvent;
@@ -50,7 +51,7 @@ public class ReserveStockEventHandler implements EventHandler<ReserveStockEvent>
             return recordStockNotEnough(event, stock);
     }
 
-    private EventKey recordStockNotEnough(ReserveStockEvent reserveStockEvent, Stock stock) throws EventStoreException, com.kloia.eventapis.cassandra.ConcurrentEventException {
+    private EventKey recordStockNotEnough(ReserveStockEvent reserveStockEvent, Stock stock) throws EventStoreException, ConcurrentEventException {
         StockNotEnoughEvent stockNotEnoughEvent =  StockNotEnoughEvent.builder()
                 .orderId(reserveStockEvent.getStockId())
                 .numberOfItemsSold(stock.getRemainingStock())

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @EnableFeignClients
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.example.stockservice", "com.kloia.eventapis"})
+@ComponentScan(basePackages = {"com.example.stockservice", "io.splitet"})
 public class StockServiceApplication {
 
     public static void main(String[] args) {
