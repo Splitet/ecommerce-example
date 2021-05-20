@@ -10,6 +10,8 @@ Content-Type: application/json
 > {%
     client.test("Request executed successfully", function() { client.assert(response.status === 200 || response.status === 201, "Response status is not 200"); });
     client.global.set("stockId", response.body.entityId);
+    client.global.set("opId", response.headers.valueOf('X-OPID'));
+
 %}
 
 ### Create Order
@@ -52,7 +54,7 @@ Content-Type: application/json
 GET http://localhost:9000/orders
 
 ### Get Order
-GET http://localhost:9000/orders/{{orderId}}/history
+GET http://localhost:9000/orders/{{orderId}}
 
 
 
@@ -80,7 +82,7 @@ GET http://localhost:7800/operations/{{opId}}
 GET http://localhost:7800/operations
 
 ### Active Operations
-GET http://localhost:7800/topics
+GET http://localhost:7800/events
 
 ### Active Operations
 GET http://localhost:7800/services

@@ -43,4 +43,4 @@ eventapis:
   eventBus:
     bootstrapServers: ${KAFKA_HOST:localhost}:${KAFKA_PORT:9092}
     consumer:
-      groupId: payment-service-group
+      groupId: ${spring.application.name}
