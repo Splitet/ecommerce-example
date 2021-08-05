@@ -1,6 +1,6 @@
-CREATE KEYSPACE IF NOT EXISTS eventapis WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
-DROP TABLE IF EXISTS eventapis.paymentevents ;
-CREATE TABLE eventapis.paymentevents (
+CREATE KEYSPACE IF NOT EXISTS test WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+DROP TABLE IF EXISTS test.paymentevents ;
+CREATE TABLE test.paymentevents (
   entityId  ASCII,
   version   INT,
   eventType ASCII,
@@ -12,7 +12,7 @@ CREATE TABLE eventapis.paymentevents (
   PRIMARY KEY (entityId, version)
 );
 
-CREATE MATERIALIZED VIEW eventapis.paymentevents_byOps AS
+CREATE MATERIALIZED VIEW test.paymentevents_byOps AS
   SELECT
     opId,
     entityId,
@@ -22,6 +22,6 @@ CREATE MATERIALIZED VIEW eventapis.paymentevents_byOps AS
     status,
     auditinfo,
     eventData
-  FROM eventapis.paymentevents
+  FROM test.paymentevents
   WHERE opId IS NOT NULL AND entityId IS NOT NULL AND version IS NOT NULL
   PRIMARY KEY (opid, entityId, VERSION );
