@@ -65,9 +65,9 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-            <id>splitet-snapshot</id>
-            <name>splitet-snapshot</name>
-            <url>https://kloia.jfrog.io/artifactory/splitet-snapshot/</url>
+            <id>splitet-github</id>
+            <name>splitet-github</name>
+            <url>https://maven.pkg.github.com/Splitet/SplitetFramework/</url>
         </repository>
     </repositories>
 
